@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <header>
+      <title>index</title>
+   </header>
+   <body>
+      <h1>Dice</h1>
+      <form action="/roll/" method="post"> 
+      <button onclick="rollDice()" >roll the dice</button>
+      </form>
+
+      <form action="/delete/" method="delete"> 
+      <button onclick="deleteListOfResults()">delete</button>
+      </form>
+
+      <p>result: {{ result }}</p>
+      <p>list: {{ listOfResults }}</p>
+   </body>
+</html>
